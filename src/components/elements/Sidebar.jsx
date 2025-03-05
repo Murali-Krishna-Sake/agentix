@@ -6,7 +6,7 @@ function Sidebar() {
     <aside className="sidebar">
       <h1 className="logo">Agentix</h1>
       <button className="thread-btn">
-        <span class="material-symbols-outlined">add</span> New Thread
+        <span className="material-symbols-outlined">add</span> New Thread
       </button>
       <ul className="navigation-links">
         {navigationConstants.map((navItem) => {

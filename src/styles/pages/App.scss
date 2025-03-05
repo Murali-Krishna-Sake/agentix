@@ -1,5 +1,64 @@
 .base-page {
-  max-width: 48rem;
-  background-color: red;
-  margin-inline: auto;
+  width: 48rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .welcome-title {
+    text-align: center;
+  }
+  .help-text {
+    text-align: center;
+    margin-block: 20px;
+  }
+}
+
+.chat-page {
+  .chat-input-container {
+    width: 100%;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 10px;
+
+    .chat-input {
+      width: 100%;
+      font-family: 'Poppins', sans-serif;
+      border: 0;
+      outline: 0;
+      max-height: 300px;
+      min-height: 50px;
+      height: fit-content;
+      resize: none;
+      outline: none;
+      overflow-y: auto;
+    }
+
+    .btns-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .upload-file-btn {
+        background-color: transparent;
+        border: 1px solid #d1d1d1;
+        color: #000;
+        padding: 8px 15px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 16px;
+          margin-right: 5px;
+        }
+        #uploaded-file {
+          display: none;
+        }
+      }
+
+      .submit-btn {
+        padding: 5px;
+        border-radius: 100%;
+      }
+    }
+  }
 }
