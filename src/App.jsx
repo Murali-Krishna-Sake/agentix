@@ -1,7 +1,9 @@
-import './App.css';
-
 function App() {
-  return <>Welcome Agentix</>;
+  return (
+    <div className="base-page">
+      <h1>Welcome to Agentix</h1>
+    </div>
+  );
 }
 
 export default App;
