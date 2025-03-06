@@ -1,6 +1,7 @@
 @import url('./components/Sidebar.scss');
 @import url('./MainLayout.scss');
 @import url('./pages/App.scss');
+@import url('./components/Step.scss');
 
 button {
   padding: 10px 24px;
@@ -23,4 +24,18 @@ button {
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-item {
+  animation: rotate 600ms linear 0s infinite;
 }
