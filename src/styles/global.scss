@@ -1,0 +1,41 @@
+@import url('./components/Sidebar.scss');
+@import url('./MainLayout.scss');
+@import url('./pages/App.scss');
+@import url('./components/Step.scss');
+
+button {
+  padding: 10px 24px;
+  background-color: #0f0f0f;
+  color: white;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.page-under-construction {
+  max-width: 48rem;
+  height: fit-content;
+  margin-block: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-item {
+  animation: rotate 600ms linear 0s infinite;
+}
