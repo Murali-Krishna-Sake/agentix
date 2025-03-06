@@ -26,10 +26,10 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (requestData.file === null) {
-      setHasError(true);
-      return;
-    }
+    // if (requestData.file === null) {
+    //   setHasError(true);
+    //   return;
+    // }
 
     const form = new FormData();
     form.append('value', requestData.value);
